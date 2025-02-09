@@ -1,9 +1,10 @@
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -g
 NAME = libft.a
-SRCS = ft_isalpha.c ft_isdigit.c ft_isanum.c ft_strlen.c ft_atoi.c
+SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_strlen.c ft_atoi.c
 
 BONUS_SCRS = 
+OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 

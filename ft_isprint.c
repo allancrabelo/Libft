@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/09 00:18:57 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/09 16:05:50 by aaugusto         ###   ########.fr       */
+/*   Created: 2025/02/09 16:06:13 by aaugusto          #+#    #+#             */
+/*   Updated: 2025/02/09 16:17:01 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int ft_isprint(int c)
 {
-	if(ft_isalpha(c) || ft_isdigit(c))
-		return (1);
-	return (0);
+    if (c < 32 || c == 127)
+        return (1);
+    return (0);
 }
 /* 
 int	main(int argc, char **argv)
 {
-	if (argc != 2)
-	{
-		printf("Input Error\n");
-		return (1);
-	}
-	printf("Original isalnum: %d\n", isalnum(argv[1][0]));
-	printf("Ft_isalnum: %d\n", ft_isalnum(argv[1][0]));
+    if (argc != 2)
+    {
+        printf("Input Error\n");
+        return (1);
+    }
+    printf("Original isprint: %d\n", isprint(argv[1][0]));
+    printf("Ft_isprint: %d\n", ft_isprint(argv[1][0]));
 	return (0);
 } */

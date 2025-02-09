@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/09 00:18:57 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/09 16:05:50 by aaugusto         ###   ########.fr       */
+/*   Created: 2025/02/09 16:52:57 by aaugusto          #+#    #+#             */
+/*   Updated: 2025/02/09 17:05:45 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int	ft_toupper(int c)
 {
-	if(ft_isalpha(c) || ft_isdigit(c))
-		return (1);
-	return (0);
+	if (c >= 'a' && c <= 'z')
+		c -= 32;
+	return(c);
 }
 /* 
 int	main(int argc, char **argv)
@@ -26,7 +26,7 @@ int	main(int argc, char **argv)
 		printf("Input Error\n");
 		return (1);
 	}
-	printf("Original isalnum: %d\n", isalnum(argv[1][0]));
-	printf("Ft_isalnum: %d\n", ft_isalnum(argv[1][0]));
+	printf("Original toupper: %d\n", toupper(argv[1][0]));
+	printf("Ft_toupper: %d\n", ft_toupper(argv[1][0]));
 	return (0);
 } */
