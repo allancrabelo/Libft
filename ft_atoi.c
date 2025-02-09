@@ -6,9 +6,11 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 17:21:12 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/08 17:52:37 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/09 00:44:54 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(char *str)
 {
@@ -46,6 +48,6 @@ int	main(int argc, char **argv)
 		return (1);
 	}
 	printf("Original atoi: %d\n", atoi(argv[1]));
-	printf("ft_atoi: %d\n", ft_atoi(argv[1]));
+	printf("Ft_atoi: %d\n", ft_atoi(argv[1]));
 	return (0);
 } */

@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/08 17:54:03 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/09 00:41:57 by aaugusto         ###   ########.fr       */
+/*   Created: 2025/02/09 00:34:10 by aaugusto          #+#    #+#             */
+/*   Updated: 2025/02/09 00:45:15 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+# define LIBFT_H
 
-int	ft_isalpha(int c)
-{
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1);
-	return (0);
-}
-/* 
-int main(int argc, char **argv)
-{
-	if(argc != 2)
-	{
-		printf("Input Error\n");
-		return (1);
-	}
-	printf("Original isalpha: %d\n", isalpha(argv[1][0]));
-	printf("Ft_isalpha: %d\n", ft_isalpha(argv[1][0]));
-	return (0);
-} */
+# include <stdio.h>
+# include <ctype.h>
+# include <string.h>
+
+int	ft_strlen(char *str);
+int	ft_isdigit(int c);
+int	ft_isalpha(int c);
+int	ft_isalnum(int c);
+int	ft_atoi(char *str);
+
+#endif

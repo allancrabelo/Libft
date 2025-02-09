@@ -6,9 +6,11 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/08 17:07:27 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/08 17:48:53 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/09 00:40:40 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {
@@ -20,9 +22,6 @@ int	ft_strlen(char *str)
 	return (i);
 }
 /* 
-#include <stdio.h>
-#include <string.h>
-
 int	main(int argc, char **argv)
 {
 	if(argc != 2)
