@@ -5,11 +5,13 @@ TODO strlcpy || diferent of usual way
 TODO memset
 TODO bzero
 TODO memcpy
-TODO strlcat
+TODO strlcat || strncat????
 TODO strchr
 TODO strrchr
-TODO strncmp
 TODO memcher
 TODO memcmp
 TODO strnstr
 TODO calloc
+
+TODO update makefile and header.
+TODO replace atoi for ft_atoi.
