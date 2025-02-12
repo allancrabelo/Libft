@@ -1,45 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/10 22:36:00 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/11 12:11:58 by aaugusto         ###   ########.fr       */
+/*   Created: 2025/02/11 12:55:07 by aaugusto          #+#    #+#             */
+/*   Updated: 2025/02/12 10:30:21 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_bzero(void *s, size_t len)
 {
-	size_t i;
-	unsigned char *string;
-	unsigned char new_c = (unsigned char)c;
-
-	string = (unsigned char*)s;
-	i = 0;
-	while(i < n)
-	{
-		string[i] = new_c;
-		i++;
-	}
-	return(s);
+	unsigned char *ptr = s;
+	while (len--)
+			*ptr++ = 0;
 }
-
-int	main(void)
+/* int	main(void)
 {
-	char array_a[] = "encryption";
-	
-	memset(array_a, '*', 9);
-	
-	printf("Orginal memset: %s\n", array_a);
+	char str[] = "42_School_Porto!";
 
-	char array_b[] = "encryption";
-
-	ft_memset(array_b, '*', 9);
-	
-	printf("Ft_memset: %s\n", array_b);
+	printf("Before: %s\n", str);
+	ft_bzero(str + 9, 1);
+	printf("After: %s\n", str);
 	return (0);
 }
+ */
