@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 21:43:00 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/13 10:26:17 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/13 10:27:23 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[j] = '\0';
 	return (dst_len + src_len);
 }
-int	main(void)
+/* int	main(void)
 {
 	char a[20] = "42_";
 	char b[] = "School";
@@ -48,4 +48,4 @@ int	main(void)
 	printf("Ft_strlcat return: %zu\n", result);
 	printf("Destination Concatened value: %s\n", a);
 	return (0);
-}
+} */
