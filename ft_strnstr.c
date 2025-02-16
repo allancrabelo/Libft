@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:14:09 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/11 12:42:03 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/16 18:20:36 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
+/* 
 int	main(void)
 {
 	const char *big = "42 School Porto";
@@ -40,4 +40,4 @@ int	main(void)
 
 	printf("ft_strnstr: %s found!\n", result);
 	return (0);
-}
+} */
