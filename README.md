@@ -3,7 +3,6 @@ The Libft project is a foundational assignment at 42 School, where I developed a
 
 
 TODO strlcat || strncat????
-TODO memcher
 TODO memcmp
 TODO calloc
 
