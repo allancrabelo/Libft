@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/11 12:55:07 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/12 10:30:21 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/20 17:05:09 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 void	ft_bzero(void *s, size_t len)
 {
-	unsigned char *ptr = s;
+	unsigned char	*ptr;
+	
+	ptr = s;
 	while (len--)
 			*ptr++ = 0;
 }
