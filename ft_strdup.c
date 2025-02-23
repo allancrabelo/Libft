@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/09 16:28:21 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/09 16:48:38 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/23 01:08:17 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strdup(const char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-
+/* 
 int main(int argc, char **argv)
 {
 	if (argc != 2)
@@ -41,4 +41,4 @@ int main(int argc, char **argv)
 	printf ("Ft_strdup: %s\n", ft_strdup(argv[1]));
 
 	return (0);
-}
+} */

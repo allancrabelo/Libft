@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 17:32:48 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/12 23:51:00 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/23 01:08:05 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);	
 }
-
+/* 
 int	main(void)
 {
 	char str[] = "Original String";
@@ -42,4 +42,4 @@ int	main(void)
 
 	printf("Ft_memmove: %s\n", result);
 	return (0);
-}
+} */

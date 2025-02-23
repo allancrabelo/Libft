@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/09 16:17:47 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/13 00:44:14 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/23 01:28:06 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 
+	i = 0; 
 	if (size == 0)
 		return ((size_t)ft_strlen(src));
 	while(i < (size - 1) && src[i])

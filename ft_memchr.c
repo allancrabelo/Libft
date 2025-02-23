@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/19 15:05:37 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/20 17:36:20 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/23 01:07:58 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-int	main(void)
+/* int	main(void)
 {
 	char data[] = "42 School";
 	
@@ -46,4 +46,4 @@ int	main(void)
 	unsigned char binData[] = {0xAA, 0xBB, 0xCC, 0xDD};
 	unsigned char *binResult = (unsigned char *)ft_memchr(binData, 0xCC, 4);
 	printf("Test 4: %p\n", binResult);
-}
+} */

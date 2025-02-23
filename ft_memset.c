@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 22:36:00 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/20 16:48:41 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/23 01:08:11 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return(s);
 }
-
-int	main(void)
+/* int	main(void)
 {
 	char array_a[] = "encryption";
 	
@@ -43,4 +42,4 @@ int	main(void)
 	
 	printf("Ft_memset: %s\n", array_b);
 	return (0);
-}
+} */
