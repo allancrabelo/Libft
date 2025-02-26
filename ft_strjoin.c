@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/23 16:05:38 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/23 16:41:34 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/26 23:23:36 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	join[i] = '\0';
 	return (join);
 }
-
+/* 
 int	main(void)
 {
 	const char *str1 = "42 ";
@@ -47,4 +47,4 @@ int	main(void)
 	res = ft_strjoin(str1, str2);
 	printf("Ft_strjoin: %s\n: ", res);
 	return (0);
-}
+} */
