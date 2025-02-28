@@ -6,36 +6,74 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 10:23:27 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/27 10:42:50 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/02/27 16:59:38 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_countdigit(int n)
+static void	ft_putonres(int n, int dig, int i, char *res)
 {
-	int count;
-
-	count = 0;
-	if (n <= 0)
+	while (i < dig)
 	{
-		count++;
-		n = -n;
+		res[dig - 1] = n % 10 + '0';
+		n /= 10;
+		dig--;
 	}
-	while (n > 0)
+}
+
+static int	ft_countdig(int n)
+{
+	int	res;
+
+	res = 0;
+	if (n <= 0)
+		res++;
+	while (n != 0)
 	{
 		n = n / 10;
-		count++;
+		res++;
 	}
-	return (count);
+	return (res);
 }
 
 char	*ft_itoa(int n)
 {
-	char *res;
+	char	*res;
+	int		dig;
+	int		i;
 
-	res = (char *)malloc((ft_countdig(n) + 1) * sizeof(char));
+	dig = ft_countdig(n);
+	res = (char *)malloc(sizeof(char) * (dig + 1));
 	if (!res)
 		return (NULL);
+	i = 0;
+	if (n == -2147483648)
+	{
+		res[i++] = '-';
+		res[i++] = '2';
+		n = 147483648;
+	}
+	if (n < 0)
+	{
+		res[i++] = '-';
+		n *= -1;
+	}
+	ft_putonres(n, dig, i, res);
+	res[dig] = '\0';
 	return (res);
 }
+/* 
+int	main(void)
+{
+	int x = 123456;
+	int y = -123456;
+	int min = -2147483648;
+	int max = 2147483647;
+
+	printf("%s\n", ft_itoa(x));
+	printf("%s\n", ft_itoa(y));
+	printf("%s\n", ft_itoa(min));	
+	printf("%s\n", ft_itoa(max));
+	return (0);
+} */
