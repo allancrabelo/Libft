@@ -6,7 +6,7 @@
 #    By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/23 00:58:27 by aaugusto          #+#    #+#              #
-#    Updated: 2025/02/28 17:33:43 by aaugusto         ###   ########.fr        #
+#    Updated: 2025/03/01 18:19:29 by aaugusto         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,28 +19,28 @@ ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c ft_strrchr.c ft_strncmp.c \
 ft_memchr.c ft_memcmp.c ft_strnstr.c ft_atoi.c ft_calloc.c ft_strdup.c \
 ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c \
 ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
+BONUS_SCRS = ft_lstnew.c ft_lstadd_front.c
 
-BONUS_SCRS = 
 OBJS = $(SRCS:.c=.o)
+BONUS_OBJS = $(BONUS_SRCS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-				ar rc $(NAME) $(OBJS)
-			
-bonus:
+		ar rc $(NAME) $(OBJS)
 
+bonus: $(BONUS_OBJS) $(OBJS)
+		ar rc $(NAME) $(BONUS_OBJS) $(OBJS)
 
 clean:
-				rm -rf $(OBJS) $(BONUS_SCRS)
+		rm -rf $(OBJS) $(BONUS_OBJS)
 
 fclean: clean
-				rm -rf $(NAME)
+		rm -rf $(NAME)
 
 re: fclean all
 
 so:
-				$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BONUS_SCRS)
-				$(CC) -nostartfiles -shared -o libft.so $(OBJS) $(BONUS_SCRS)
-
+		$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS) $(BONUS_SRCS)
+		$(CC) -nostartfiles -shared -o libft.so $(OBJS) $(BONUS_OBJS)
 .SILENT:
