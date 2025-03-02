@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/01 17:17:33 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/03/01 17:59:53 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/03/02 10:10:42 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,16 +34,4 @@ t_list *ft_lstnew(void *content)
 	ft_putendl_fd(lst -> content, 1);
 	free(lst);
 	return (0);
-}
-
-/* +----------------------+
-| content -> "42 School Porto"  |
-| next -> NULL         |
-+----------------------+
-
-lst->next = ft_lstnew((void *)"Another string");
-
-+----------------------+    +----------------+
-| content -> "42 School Porto" | -> | content -> "Outro nó" |
-| next -----------------> | next -> NULL  |
-+----------------------+    +----------------+ */
+}*/
