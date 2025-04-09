@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/09 16:52:57 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/09 17:05:45 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/07 15:47:49 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		c -= 32;
-	return(c);
+	return (c);
 }
 /* 
 int	main(int argc, char **argv)

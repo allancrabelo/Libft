@@ -6,17 +6,15 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/09 16:06:13 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/09 16:17:01 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/09 10:15:18 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (c < 32 || c == 127)
-        return (1);
-    return (0);
+	return (c >= 32 && c <= 126);
 }
 /* 
 int	main(int argc, char **argv)

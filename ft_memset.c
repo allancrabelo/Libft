@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 22:36:00 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/23 01:08:11 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/07 15:40:00 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,19 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t i;
-	unsigned char *string;
-	unsigned char new_c;
-	
+	size_t			i;
+	unsigned char	*string;
+	unsigned char	new_c;
+
 	new_c = (unsigned char)c;
-	string = (unsigned char*)s;
+	string = (unsigned char *)s;
 	i = 0;
-	while(i < n)
+	while (i < n)
 	{
 		string[i] = new_c;
 		i++;
 	}
-	return(s);
+	return (s);
 }
 /* int	main(void)
 {

@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 10:18:36 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/26 16:11:49 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/07 15:45:45 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t i;
-	size_t j;
-	
+	size_t	i;
+	size_t	j;
+
 	if (!s1 || !set)
 		return (NULL);
 	i = 0;
-	while(s1[i] && ft_strchr(set, s1[i]))
+	while (s1[i] && ft_strchr(set, s1[i]))
 		i++;
 	j = ft_strlen(s1) - 1;
-	while(s1[j] && ft_strchr(set, s1[j]))
+	while (s1[j] && ft_strchr(set, s1[j]))
 		j--;
 	return (ft_substr(s1, i, j - i + 1));
 }

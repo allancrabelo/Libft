@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 17:32:48 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/23 01:08:05 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/09 10:33:50 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,16 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*d;
 	const unsigned char	*s;
-	size_t	i;
 
-	if(!dest && !src)
+	if (!dest && !src)
 		return (dest);
 	if (dest < src)
 		return (ft_memcpy(dest, src, n));
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
-	while (i < n)
-	{
-		d[i] = s[i];
-		i++;
-	}
-	return (dest);	
+	while (n--)
+		d[n] = s[n];
+	return (dest);
 }
 /* 
 int	main(void)

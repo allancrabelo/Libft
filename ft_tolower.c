@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/09 17:03:14 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/09 17:05:50 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/07 15:47:33 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c += 32;
-	return(c);
+	return (c);
 }
 /* 
 int	main(int argc, char **argv)

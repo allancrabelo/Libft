@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/26 16:13:56 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/26 23:22:51 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/09 09:59:10 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	ft_occurence(char const *s, char c)
 {
 	int	word_count;
 	int	i;
-	
+
 	i = 0;
 	word_count = 0;
 	while (s[i])
@@ -46,13 +46,13 @@ static int	ft_occurence(char const *s, char c)
 
 static void	*ft_free(char **splitted_s, size_t i)
 {
-	while(i--)
+	while (i--)
 		free(splitted_s[i]);
 	free(splitted_s);
 	return (NULL);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char	**res;
 	size_t	len;
@@ -76,7 +76,7 @@ char **ft_split(char const *s, char c)
 			return (ft_free(res, j));
 		i += ft_charcount(s, c, i);
 	}
-	res[j] = '\0';
+	res[j] = NULL;
 	return (res);
 }
 /* int	main(void)

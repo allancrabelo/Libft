@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/23 16:05:38 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/26 23:23:36 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/07 15:41:28 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *join;
-	int	i;
-	int	j;
+	char	*join;
+	int		i;
+	int		j;
 
 	i = 0;
 	j = 0;
 	join = (char *)malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
 	if (!join)
 		return (NULL);
-	while(s1[i])
+	while (s1[i])
 	{
 		join[i] = s1[i];
 		i++;
 	}
-	while(s2[j])
+	while (s2[j])
 	{
 		join[i] = s2[j];
 		j++;

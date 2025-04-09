@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/02 10:18:02 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/03/02 10:24:32 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/07 15:29:09 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_lstsize(t_list *lst)
 {
-	int		count;
+	int	count;
 
 	count = 0;
 	while (lst)

@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 17:07:50 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/12 23:45:08 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/07 15:34:09 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,21 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char	*destination;
-	const unsigned char *source;
-	size_t	i;
-	
-	if(!dest && !src)
+	unsigned char		*destination;
+	const unsigned char	*source;
+	size_t				i;
+
+	if (!dest && !src)
 		return (dest);
 	destination = dest;
 	source = src;
 	i = 0;
-	while(i < n)
+	while (i < n)
 	{
 		destination[i] = source[i];
 		i++;
 	}
-	return(dest);
+	return (dest);
 }
 /* 
 int	main(void)

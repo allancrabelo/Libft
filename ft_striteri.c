@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/28 00:35:12 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/28 00:49:26 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/07 15:40:55 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned	int i;
+	unsigned int	i;
 
 	i = 0;
 	if (s && f)

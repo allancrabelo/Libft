@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/09 16:28:21 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/23 01:08:17 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/09 10:28:43 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,13 @@
 char	*ft_strdup(const char *src)
 {
 	char	*dest;
-	int	i;
+	size_t	len;
 
-	i = 0;
-	dest = (char *)malloc((ft_strlen((src) + 1) * sizeof(char)));
-	if(!(dest))
+	len = ft_strlen(src) + 1;
+	dest = (char *)malloc((len) * sizeof(char));
+	if (dest == NULL)
 		return (NULL);
-	while(src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
+	ft_memcpy(dest, src, len);
 	return (dest);
 }
 /* 

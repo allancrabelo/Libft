@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 00:11:32 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/02/14 00:35:55 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/09 16:49:09 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,12 @@ char	*ft_strchr(const char *s, int c)
 	int	i;
 
 	i = 0;
-	while(s[i])
-	{
-		if(s[i] == (char)c)
-			return ((char*)&s[i]);
+	while ((s[i] != (char)c) && s[i])
 		i++;
-	}
-	if (c == '\0')
-		return ((char*)&s[i]);
-	return (NULL);
+	if (s[i] != (char)c)
+		return (NULL);
+	else
+		return ((char *)&s[i]);
 }
 /* 
 int	main(void)

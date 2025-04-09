@@ -6,7 +6,7 @@
 /*   By: aaugusto <aaugusto@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/05 16:34:03 by aaugusto          #+#    #+#             */
-/*   Updated: 2025/03/05 16:50:47 by aaugusto         ###   ########.fr       */
+/*   Updated: 2025/04/07 15:28:37 by aaugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,14 @@ static void	*ft_reset(t_list *lst, void *content, void (*del)(void *))
 	return (NULL);
 }
 
-t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	if (!lst || !f || !del) 
-		return (NULL);
-	
-	t_list *new_lst;
-	t_list *temp;
-	void *content;
+	t_list	*new_lst;
+	t_list	*temp;
+	void	*content;
 
+	if (!lst || !f || !del)
+		return (NULL);
 	new_lst = NULL;
 	while (lst)
 	{
