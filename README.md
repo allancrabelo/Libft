@@ -1,3 +1,5 @@
+![Design sem nome (3)](https://github.com/user-attachments/assets/ae8abc52-38ee-40c8-9233-e07b7ac33f45)
+
 # 📚 42 School - Libft
 
 Libft is a library developed in pure C that reimplements fundamental functions of the libc from scratch. This project goes beyond a mere technical exercise — it represents a deep understanding of pointer concepts, dynamic memory allocation, memory manipulation, and data structures.
