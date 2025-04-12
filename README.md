@@ -88,3 +88,8 @@ Stay tuned! The tutorial will be available soon. 🚀
 If you are also doing the Piscine, feel free to suggest improvements or share new approaches!
 
     📬 Contact: If you want to discuss solutions or exchange ideas, find me on Discord or GitHub!
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/60cc3bc7-fb89-435b-af30-3da855287fce" alt="Imagem" />
+</p>
+
