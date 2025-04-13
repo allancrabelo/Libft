@@ -76,7 +76,7 @@ make re     # Rebuilds from scratch
 
 # 🚧 Tutorials (Coming Soon)
 
-I'm currently working on a detailed tutorial to help others navigate the 42 Piscine Reloaded project more efficiently. This section will include:
+I'm currently working on a detailed tutorial to help others navigate the LIBFT project more efficiently. This section will include:
 
     📹 Video Guide – A step-by-step walkthrough explaining key concepts and solutions.
     📄 PDF Guide – A structured document with explanations, tips, and best practices.
