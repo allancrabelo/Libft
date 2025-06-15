@@ -23,7 +23,7 @@ During the Libft project evaluation, I achieved the maximum score of 125%, a res
   This score reflects not only technical mastery but also commitment to code quality, readability, and performance — fundamental pillars for low-level projects.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/1dae4946-6c1a-4e37-9d2e-eaf0fda7858e" alt="Imagem" />
+  <img src="https://github.com/user-attachments/assets/f3a5d881-f36f-440e-bd37-9d618c395e44" alt="Imagem" />
 </p>
 
 ## 📚 Key Features
